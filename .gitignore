@@ -1,0 +1,6 @@
+.DS_Store
+dependency-reduced-pom.xml
+nbactions.xml
+testMods/
+target/
+
