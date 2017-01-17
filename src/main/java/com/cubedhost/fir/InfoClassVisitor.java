@@ -20,7 +20,7 @@ public class InfoClassVisitor extends ClassVisitor {
     public AnnotationVisitor visitAnnotation(String desc, boolean visible) {
         checkCurrentAnnotation();
 
-        if (desc.equals("Lnet/minecraftforge/fml/common/Mod;")) {
+        if (desc.equals("Lnet/minecraftforge/fml/common/Mod;") || desc.equals("Lcpw/mods/fml/common/Mod;")) {
             return currentAnnotationVisitor = new InfoAnnotationVisitor();
         }
 
